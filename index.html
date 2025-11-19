@@ -5,25 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/modern-normalize/modern-normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
 </head>
 
-<body>
-    <header>
-        <a href="">
-            <img src="./img/Group 35.png" alt="Логотип компаніі" class="logo" />
-            <img src="./img/Group 36.png" alt="Логотип компаніі" class="logo" />
-        </a>
-        <ul class="nav_heder">
-            <li><a href="#Цифры">Цифры</a></li>
-            <li><a href="#Сделки онлайн">Сделки онлайн</a></li>
-            <li><a href="#о компании">о компании</a></li>
-            <li><a href="#как начать">как начать</a></li>
-            <li><a href="#тарифы">тарифы</a></li>
-            <li><a href="#отзывы">отзывы</a></li>
-            <li><a href="#FAQ">FAQ</a></li>
-        </ul>
+<body class="body container">
+    <header class="header">
+        <div class="header_inner">
+
+            <a href="#" class="logo">
+                <img src="./img/Group 35.png" class="logo_icon" alt="TradeBladeLogo" />
+                <img src="./img/Group 36.png" class="logo_icon logo_text" alt="logotext" />
+            </a>
+
+            <div>
+                <nav class="nav">
+                    <ul class="nav_list list" id="navList">
+                        <li><a href="#Цифры" class="nav_link">ЦИФРИ</a></li>
+                        <li><a href="#Сделки онлайн" class="nav_link">сделки онлайн</a></li>
+                        <li><a href="#о компании" class="nav_link">о компании</a></li>
+                        <li><a href="#как начать" class="nav_link">как начать</a></li>
+                        <li><a href="#тарифы" class="nav_link">тарифы</a></li>
+                        <li><a href="#отзывы" class="nav_link">отзывы</a></li>
+                        <li><a href="#FAQ" class="nav_link">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header_actions">
+                <button class="btn btn-primary"> <a href="#">Вход</a></button>
+                <button class="btn btn-ghost"> <a href="#">Регистрация</a></button>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -33,6 +49,7 @@
     <footer>
 
     </footer>
+    <!-- <script defer src="./mobile-menu.js"></script> -->
 </body>
 
 </html>

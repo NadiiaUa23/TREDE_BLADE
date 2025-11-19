@@ -1,30 +1,146 @@
-.logo {
-    height: 30px;
-    width: 30px;
+:root {
+    --bg: #050816;
+    --muted: #9ca3af;
+    --text: #f9fafb;
+    --textbtm: rgba(87, 225, 255, 1);
+    --transition: 200ms ease;
 }
 
-header {
-    background-color: whitesmoke
+/* Global */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    background: var(--bg);
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 a {
+    color: inherit;
     text-decoration: none;
-    color: black;
-
 }
 
-.nav_heder {
+ul li {
+    list-style: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.container {
+    width: 1440px;
+    height: 100%;
+    margin: auto;
+    /* padding-inline: 16px; */
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header_inner {
     display: flex;
-    gap: 20px;
-    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    height: 68px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
-ul {}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
 
+}
 
+.logo_icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 
-li {
-    list-style: none;
-    width: 55;
-    height: 17;
+.logo_text {
+    margin-left: -38px;
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--muted)
+}
+
+.nav_list {
+    width: 693px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    line-height: 17px;
+}
+
+.nav_link {
+    font-size: 14px;
+    color: var(--transition);
+}
+
+.nav_link:hover {
+    color: var(--text);
+    transition: 200ms ease;
+}
+
+/* Buttons */
+.header_actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    color: var(--textbtm);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 24px;
+    border: 1.5px solid rgba(87, 225, 255, 1);
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    background: rgba(87, 225, 255, 0.2);
+    box-shadow: 0px 0px 4px 0px rgba(87, 225, 255, 1);
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background: rgba(87, 225, 255, 1);
+    color: var(--bg);
+}
+
+.btn-ghost:hover {
+    background: rgba(87, 225, 255, 1);
+    color: var(--bg);
 }
