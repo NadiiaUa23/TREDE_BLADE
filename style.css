@@ -287,7 +287,6 @@ ul li {
     .header_inner {
         display: flex;
         align-items: center;
-
         padding: 2px 16px;
     }
 
@@ -343,14 +342,10 @@ ul li {
         inset: 0;
         margin: auto;
         padding: 72px 20px 96px;
-
         display: flex;
         flex-direction: column;
         gap: 20px;
-
         background: #5b4dff;
-        /* фіолетовий як у макеті */
-
         transform: translateY(-100%);
         opacity: 0;
         pointer-events: none;
@@ -381,7 +376,6 @@ ul li {
 
     }
 
-    /* кнопки внизу меню (як на макеті) */
     .header_actions {
         position: fixed;
         bottom: 24px;
@@ -417,7 +411,6 @@ ul li {
         box-shadow: none;
     }
 
-    /* ховаємо логін/реєстрацію зверху на мобільному */
     .header_actions:not(body.menu-open .header_actions) {
         display: none;
     }
@@ -435,14 +428,12 @@ ul li {
         font-weight: 700;
         font-size: 32px;
         line-height: 45px;
-
         margin-bottom: 0px;
         letter-spacing: -2px;
         color: var(--text);
     }
 
     .hero_inner {
-
         padding-left: 16px;
     }
 
